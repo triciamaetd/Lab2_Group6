@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a New Event</title>
+    <link rel="stylesheet" href="css/style1.css" />
+    <script src="js/script1.js"></script>
+</head>
+<body>
+
+    <center> <h1>CREATE A NEW EVENT</h1></center>
+    <div id="error_message"></div>
+    <form id=eventForm onsubmit="return validate()">
+        <div class="details">
+
+            Event Type: &nbsp;&nbsp;&nbsp;
+            <select id="eventType" name="eventType" required>
+                <option label="Choose One">
+                <option value="Birthday">Birthday</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Seminar">Seminar</option>
+                <option value="Team Building">Team Building</option>
+            </select>
+            <br /><br />
+
+            <label>Event Title:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="eventTitle" name="eventTitle"> <br><br />
+
+            <label>Event Dates:</label>&nbsp;&nbsp;
+            <input type="date" id="eventDates" name="eventDates" min="2020-08-19" max="2022-12-31" /> to <input type="date" value="dd/mm/yyyy" min="2020-08-19" max="2022-12-31" /><br><br />
+
+            <label>Posting Date:</label>&nbsp;
+            <input type="date" id="postingDate" name="postingDate" min="2020-08-19" max="2022-12-31" /><br /><br />
+
+            <input class="checkbox" type="checkbox" value="1"> Is Registration Required?<br><br>
+
+            <input class="checkbox" type="checkbox" value="2"> Is this event associated with any Family Programs?<br><br>
+
+            <input class="checkbox" type="checkbox" value="3"> Upon Registration Completion, Are Users to Receive and Auto Generated Email?<br><br>
+
+            <input class="checkbox" type="checkbox" value="4"> Is There a Point of Contact?<br><br>
+
+            <input class="checkbox" type="checkbox" value="5"> Is There a Hosting Command Point of Contact?<br><br><br />
+
+            <center>
+                <button type="submit" value="Submit">Submit</button>
+                <input type="button" name="cancel" value="Cancel" onClick="window.location='index.html';" />
+            </center>
+
+        </div>
+    </form>
+</body>
+</html>

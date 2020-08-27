@@ -1,0 +1,53 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #0f8a9d;
+    background: linear-gradient(57deg, #00C6A7, #1E4D92);
+}
+
+
+#outer {
+    text-align: center;
+}
+
+.details {
+    background: rgba(241, 220, 220, 0.438);
+    width: 50%;
+    text-align: justify;
+    padding: 90px;
+    margin: 50px auto;
+    border-style: solid;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#eventType {
+    height: 20px;
+    width: 300px;
+}
+
+#eventTitle {
+    height: 20px;
+    width: 600px;
+}
+
+#eventDates {
+    height: 20px;
+}
+
+#postingDate {
+    height: 20px;
+}
+
+#error_message {
+    color: #ba3939;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align: center;
+}
